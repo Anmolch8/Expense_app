@@ -122,7 +122,7 @@ void _deleleTransaction(String id){
         // ignore: sized_box_for_whitespace
         Container(width:double.infinity,
        child:chart(_recentTransaction),),
-   TransactionList(_TList, _deleleTransaction),
+  TransactionList(_TList, _deleleTransaction),
       ],)
     ),
     floatingActionButton: FloatingActionButton(onPressed:() =>_modalAddNewTransaction(context),
