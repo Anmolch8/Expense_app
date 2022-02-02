@@ -61,7 +61,7 @@ class _newTransactionState extends State<newTransaction> {
                ScaffoldMessenger.of(context).showSnackBar(snackbar);
               }}
            
-  return FutureBuilder(future:Hive.openBox(),builder:
+  return
    Card(elevation: 5,child:Container(
          padding: const EdgeInsets.all(10),
          child:Column(
@@ -82,6 +82,6 @@ class _newTransactionState extends State<newTransaction> {
       RaisedButton(color: Theme.of(context).primaryColor, onPressed: _submitData, child: const Text('Add Expense'),textColor: Colors.white,)
        ],))
 
-    ));
+    );
   }
 }
