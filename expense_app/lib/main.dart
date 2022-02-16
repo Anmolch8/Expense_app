@@ -20,9 +20,9 @@ import 'package:hive/hive.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
-  final Directory doc= await getApplicationDocumentsDirectory();
-  Hive.init(doc.path);
-  Hive.registerAdapter(TransactionAdapter());
+ // final Directory doc= await getApplicationDocumentsDirectory();
+  //Hive.init(doc.path);
+  //Hive.registerAdapter(TransactionAdapter());
   // final itemBox=await Hive.openBox('entries'); used to open page once for every page of application 
   // to open box for only one page use futurebuilder widget
   runApp(const MyApp());
